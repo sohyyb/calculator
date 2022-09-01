@@ -1,0 +1,126 @@
+@import url("https://fonts.google.com/specimen/League+Spartan");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 32px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  background-color: #3a4764;
+  min-height: 100vh;
+}
+
+.container .calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.container .calc .screen {
+  text-align: center;
+  color: white;
+  background-color: #182034;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.container .calc .keypad {
+  background-color: #232c43;
+  color: white;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.container .calc .keypad .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .calc .keypad .buttons .del {
+  background-color: #717c9d;
+  color: white;
+}
+
+.container .calc .keypad .buttons button {
+  width: 75px;
+  height: 45px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 0px 0px #b4a597;
+          box-shadow: 0px 3px 0px 0px #b4a597;
+  background-color: #eae3dc;
+  border: none;
+  cursor: pointer;
+  color: #444b5a;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+@media screen and (max-width: 768px) {
+  .container .calc .keypad .buttons button {
+    width: 65px;
+  }
+}
+
+.container .calc .keypad .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.container .calc .keypad .footer .reset {
+  width: 150px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #717c9d;
+  cursor: pointer;
+}
+
+.container .calc .keypad .footer .equal {
+  cursor: pointer;
+  background-color: #d03f2f;
+  width: 150px;
+  text-align: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 3px 0px 0px #93261a;
+          box-shadow: 0px 3px 0px 0px #93261a;
+}
+/*# sourceMappingURL=main.css.map */

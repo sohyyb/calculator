@@ -1,0 +1,88 @@
+@import url("https://fonts.google.com/specimen/League+Spartan");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 32px;
+  font-family: "League Spartan", sans-serif;
+}
+.container {
+  background-color: hsl(222, 26%, 31%);
+  min-height: 100vh;
+  .calc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 15px;
+    .screen {
+      text-align: center;
+      color: white;
+      background-color: hsl(224, 36%, 15%);
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      max-width: 100%;
+      display: flex;
+      justify-content: right;
+    }
+    .keypad {
+      background-color: hsl(223, 31%, 20%);
+      color: white;
+      width: 400px;
+      max-width: 100%;
+      border-radius: 10px;
+      padding: 15px;
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        .del {
+          background-color: #717c9d;
+          color: white;
+        }
+        button {
+          width: 75px;
+          height: 45px;
+          border-radius: 5px;
+          box-shadow: 0px 3px 0px 0px #b4a597;
+          background-color: hsl(30, 25%, 89%);
+          border: none;
+          cursor: pointer;
+          color: hsl(221, 14%, 31%);
+          font-weight: bold;
+          font-size: 27px;
+          @media screen and (max-width: 768px) {
+            width: 65px;
+          }
+        }
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+
+        .reset {
+          width: 150px;
+          text-align: center;
+          border-radius: 8px;
+          background-color: #717c9d;
+          cursor: pointer;
+        }
+        .equal {
+          cursor: pointer;
+          background-color: hsl(6, 63%, 50%);
+          width: 150px;
+          text-align: center;
+          border-radius: 8px;
+          box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
+        }
+      }
+    }
+  }
+}
